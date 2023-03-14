@@ -123,6 +123,7 @@ def first_stage():
 def second_stage():
 <<<<<<< HEAD
     with open('LTE_R&S LTE Scanner_[1]_trans_list_[].csv', mode="r", encoding='utf-8') as csv_file, open('LTE_R&S LTE Scanner_[1]_trans_list_[].txt', mode='w', encoding='utf-8') as txt_file:
+        csv_file.seek(195)
         txt_file.write(csv_file.read())
 
 def three_stage():
@@ -241,6 +242,6 @@ Columns16_Type=utUSInt
         print('[Result file successfully]')
 
 if __name__ == '__main__':
-    first_stage()
+    #first_stage()
     second_stage()
-    three_stage()
+    #three_stage()
